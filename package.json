@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-next-tailwind",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1057.0",
+    "@sanity/client": "^7.22.1",
+    "formidable": "^3.5.4",
+    "framer-motion": "10.12.16",
+    "next": "^13.5.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.1",
+    "@types/react": "19.2.15",
+    "autoprefixer": "10.4.14",
+    "postcss": "8.4.23",
+    "tailwindcss": "3.4.7",
+    "typescript": "6.0.3"
+  }
+}

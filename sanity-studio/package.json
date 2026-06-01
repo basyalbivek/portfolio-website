@@ -1,0 +1,16 @@
+{
+  "name": "sanity-studio",
+  "private": true,
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
+  },
+  "version": "1.0.0",
+  "description": "Sanity Studio schemas",
+  "main": "sanity.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

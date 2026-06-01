@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+/* Simple lightweight animations to keep load small */
+.fade-up {
+  transform: translateY(12px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.fade-up.in {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Brand colors — blue and maroon */
+:root{
+  --brand-blue: #1e40af; /* deep blue */
+  --brand-blue-100: rgba(30,64,175,0.08);
+  --brand-maroon: #800020; /* maroon */
+  --brand-maroon-100: rgba(128,0,32,0.08);
+}
+
+/* Simple utility classes for brand colors */
+.bg-brand-blue{background-color:var(--brand-blue)!important}
+.text-brand-blue{color:var(--brand-blue)!important}
+.bg-brand-blue-100{background-color:var(--brand-blue-100)!important}
+.border-brand-blue{border-color:var(--brand-blue)!important}
+.bg-brand-maroon{background-color:var(--brand-maroon)!important}
+.text-brand-maroon{color:var(--brand-maroon)!important}
+.bg-brand-maroon-100{background-color:var(--brand-maroon-100)!important}
+
+.btn-brand{background-color:var(--brand-blue);color:white;padding:.5rem 1rem;border-radius:.375rem}
+.btn-brand-outline{border:1px solid var(--brand-blue);color:var(--brand-blue);padding:.5rem 1rem;border-radius:.375rem;background:white}
+.btn-maroon{background-color:var(--brand-maroon);color:white;padding:.5rem 1rem;border-radius:.375rem}
+
